@@ -4,6 +4,9 @@
   ServerAdmin webmaster@example.com
   DocumentRoot /var/www/html/
 
+  # Which file to serve when main/default request is served
+	# DirectoryIndex info.php
+
   # For wordpress
   <Directory /var/www/html>
     Options Indexes FollowSymLinks
