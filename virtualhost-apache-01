@@ -5,7 +5,7 @@
   DocumentRoot /var/www/html/
 
   # Which file to serve when main/default request is served
-	# DirectoryIndex info.php
+  # DirectoryIndex info.php
 
   # For wordpress
   <Directory /var/www/html>
@@ -16,4 +16,8 @@
 
   ErrorLog /var/www/html/logs/error.log
   CustomLog /var/www/logs/access.log combined
+
+# altertive way Specify where different kind of logs should be saved
+#ErrorLog ${APACHE_LOG_DIR}/your-domain.com_error.
+#CustomLog ${APACHE_LOG_DIR}/your-domain.com_access.log combined
 </VirtualHost>
