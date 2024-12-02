@@ -1,0 +1,16 @@
+<VirtualHost *:80>     
+  ServerName example.com
+  ServerAlias www.example.com
+  ServerAdmin webmaster@example.com
+  DocumentRoot /var/www/html/
+
+  # For wordpress
+  <Directory /var/www/html>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+  </Directory>
+
+  ErrorLog /var/www/html/logs/error.log
+  CustomLog /var/www/logs/access.log combined
+</VirtualHost>
